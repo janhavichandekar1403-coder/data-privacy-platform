@@ -61,38 +61,6 @@ data-privacy-platform/
 
 ---
 
-# 📷 Screenshots
-
-## Home Page
-
-![Home](screenshots/home.png)
-
----
-
-## PII Detection
-
-![Detection](screenshots/detection.png)
-
----
-
-## Results Dashboard
-
-![Results](screenshots/results.png)
-
----
-
-## Anonymized Dataset
-
-![CSV](screenshots/anonymized_csv.png)
-
----
-
-## Compliance Report
-
-![Report](screenshots/compliance_report.png)
-
----
-
 ## 🚀 Installation
 
 Clone the repository
