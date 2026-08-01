@@ -1,0 +1,4 @@
+Flask==3.0.3
+pandas==2.2.2
+cryptography==42.0.8
+fpdf2==2.7.9

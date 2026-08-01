@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PII Anonymization Platform</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <header>
+    <h1>🔒 AI Privacy-Preserving Data Anonymization Platform</h1>
+    <p>Upload a CSV file, detect sensitive columns, and protect them automatically.</p>
+  </header>
+
+  <main>
+
+    <!-- STEP 1: UPLOAD -->
+    <section id="upload-section" class="card">
+      <h2>Step 1 — Upload Dataset</h2>
+      <input type="file" id="fileInput" accept=".csv">
+      <button id="uploadBtn">Upload & Scan</button>
+      <p id="uploadStatus"></p>
+    </section>
+
+    <!-- STEP 2: REVIEW DETECTED COLUMNS -->
+    <section id="review-section" class="card hidden">
+      <h2>Step 2 — Review Detected Columns</h2>
+      <p>Risk score before protection: <span id="riskBefore" class="risk"></span>/100</p>
+      <table id="columnsTable">
+        <thead>
+          <tr>
+            <th>Column</th>
+            <th>Detected As</th>
+            <th>Confidence</th>
+            <th>Sample Values</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <button id="processBtn">Apply Protection</button>
+    </section>
+
+    <!-- STEP 3: RESULTS -->
+    <section id="result-section" class="card hidden">
+      <h2>Step 3 — Download Results</h2>
+      <p>Risk score before: <span id="riskBeforeResult" class="risk"></span>/100</p>
+      <p>Risk score after: <span id="riskAfterResult" class="risk"></span>/100</p>
+      <p id="keyNotice" class="hidden">
+        🔑 Encryption key (save this, it's shown only once):
+        <code id="encKey"></code>
+      </p>
+      <a id="csvLink" href="#" class="button">Download Anonymized CSV</a>
+      <a id="reportLink" href="#" class="button">Download Compliance Report (PDF)</a>
+    </section>
+
+  </main>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
