@@ -46,7 +46,7 @@ Built with **Flask**, **Python**, and **Pandas**, this platform helps organizati
 ### 📄 Compliance Report
 
 <p align="center">
-  <img src="screenshots/compliance%20report.png" width="70%">
+  <img src="screenshots/compilance%20report.png" width="70%">
 </p>
 
 ---
