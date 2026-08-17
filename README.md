@@ -22,6 +22,34 @@ Built with **Flask**, **Python**, and **Pandas**, this platform helps organizati
 - 🚀 Simple and responsive web interface
 
 ---
+## 📸 Screenshots
+
+### 🏠 Home Page
+
+<p align="center">
+  <img src="screenshots/home.png" width="48%">
+  <img src="screenshots/home2.png" width="48%">
+</p>
+
+### 🔍 PII Detection
+
+<p align="center">
+  <img src="screenshots/pii-detection%20(2).png" width="70%">
+</p>
+
+### 🔐 Anonymized Dataset
+
+<p align="center">
+  <img src="screenshots/anonymized%20excel%20sheet.png" width="70%">
+</p>
+
+### 📄 Compliance Report
+
+<p align="center">
+  <img src="screenshots/compliance%20report.png" width="70%">
+</p>
+
+---
 
 ## 🛠️ Tech Stack
 
